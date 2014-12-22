@@ -1,8 +1,15 @@
 {
   "name": "unchatbar-server",
   "version": "0.0.1",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unchatbar/unchatbar-server.git"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "scripts": {
+    "test": "mocha test",
     "start": "node app.js"
   },
   "dependencies": {
@@ -19,11 +26,14 @@
   },
   "devDependencies": {
     "grunt": "~0.4.5",
-    "grunt-develop": "~0.4.0",
-    "grunt-contrib-watch": "~0.6.1",
     "grunt-contrib-compass": "~0.9.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-develop": "~0.4.0",
+    "load-grunt-tasks": "~1.0.0",
+    "mocha": "^2.0.1",
     "request": "~2.51.0",
-    "time-grunt": "~1.0.0",
-    "load-grunt-tasks": "~1.0.0"
+    "should": "^4.4.1",
+    "supertest": "^0.15.0",
+    "time-grunt": "~1.0.0"
   }
 }
