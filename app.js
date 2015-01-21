@@ -13,6 +13,7 @@ var bodyParser = require('body-parser'),
 var app = express(),
   server = http.createServer(app),
   peerServer = peer.ExpressPeerServer(server, config.peer);
+  app.use('/peerjs', peerServer);
 /*
 routing bug
 -->http://[HOST]:8181/peerjs/PC/xdgerakrt8d/id?i=0
