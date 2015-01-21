@@ -9,7 +9,7 @@ var bodyParser = require('body-parser'),
   logger = require('morgan'),
   methodOverride = require('method-override'),
   peer = require('peer');
-console.log(config.peer);
+
 var app = express(),
   server = http.createServer(app),
   peerServer = peer.ExpressPeerServer(server, config.peer);
