@@ -9,16 +9,17 @@ var config = {
     app: {
       name: 'unchatbar-server'
     },
-    port: process.env.PORT || 9000,
     peer: {
+      port: process.env.PORT || 9000,
       debug: true,
       timeout: 5000,
       key: 'peerjs',
-      ping_timeout : true,
+      max_pings_missed: 5,
+      ping_timeout: 5000,
       ip_limit: 5000,
       concurrent_limit: 5000,
-      allow_discovery: false,
-      proxied: false
+      allow_discovery: false
+
     }
   },
 
@@ -27,16 +28,16 @@ var config = {
     app: {
       name: 'unchatbar-server'
     },
-    port: process.env.PORT  || 9000,
     peer: {
-      debug: false,
+      port: process.env.PORT || 9000,
+      debug: true,
       timeout: 5000,
       key: 'peerjs',
-      ping_timeout : true,
+      max_pings_missed: 5,
+      ping_timeout: 5000,
       ip_limit: 5000,
       concurrent_limit: 5000,
-      allow_discovery: false,
-      proxied: false
+      allow_discovery: false
     }
   },
 
@@ -45,16 +46,16 @@ var config = {
     app: {
       name: 'unchatbar-server'
     },
-    port: process.env.PORT  || 9000,
     peer: {
-      debug: false,
+      port: process.env.PORT || 9000,
+      debug: true,
       timeout: 5000,
       key: 'peerjs',
-      ping_timeout : true,
+      max_pings_missed: 5,
+      ping_timeout: 5000,
       ip_limit: 5000,
       concurrent_limit: 5000,
-      allow_discovery: false,
-      proxied: false
+      allow_discovery: false
     }
   }
 
