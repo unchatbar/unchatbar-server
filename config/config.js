@@ -9,7 +9,7 @@ var config = {
     app: {
       name: 'unchatbar-server'
     },
-    port: 8181,
+    port: process.env.PORT || 9000,
     peer: {
       debug: true,
       timeout: 5000,
@@ -27,7 +27,7 @@ var config = {
     app: {
       name: 'unchatbar-server'
     },
-    port: 8181,
+    port: process.env.PORT  || 9000,
     peer: {
       debug: false,
       timeout: 5000,
@@ -45,7 +45,7 @@ var config = {
     app: {
       name: 'unchatbar-server'
     },
-    port: 8181,
+    port: process.env.PORT  || 9000,
     peer: {
       debug: false,
       timeout: 5000,
