@@ -11,11 +11,11 @@ var config = {
     },
     peer: {
       port: process.env.PORT || 9000,
-      debug: true,
+      debug: false,
       timeout: 5000,
       key: 'peerjs',
       max_pings_missed: 5,
-      ping_timeout: 5000,
+      ping_timeout: 20000,
       ip_limit: 5000,
       concurrent_limit: 5000,
       allow_discovery: false
@@ -30,12 +30,12 @@ var config = {
     },
     peer: {
       port: process.env.PORT || 9000,
-      debug: true,
+      debug: false,
       timeout: 5000,
       key: 'peerjs',
       max_pings_missed: 5,
       ping_timeout: 5000,
-      ip_limit: 5000,
+      ip_limit: 20000,
       concurrent_limit: 5000,
       allow_discovery: false
     }
@@ -48,11 +48,11 @@ var config = {
     },
     peer: {
       port: process.env.PORT || 9000,
-      debug: true,
+      debug: false,
       timeout: 5000,
       key: 'peerjs',
       max_pings_missed: 5,
-      ping_timeout: 5000,
+      ping_timeout: 20000,
       ip_limit: 5000,
       concurrent_limit: 5000,
       allow_discovery: false
