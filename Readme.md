@@ -9,7 +9,7 @@ Peer to peer chat application server using WebRTC technologies
 ## Installation
 * Install Bower: `npm install -g bower`
 * Install Gunt CLI: `npm install -g grunt-cli`
-* Clone repository `git clone https://github.com/unchatbar/unchatbar-server.git`
+* Clone repository `git clone git://github.com/unchatbar/unchatbar-server.git`
 * Run `npm install` to install required Node.js modules
 * Run `bower install` to install required Bower components
 
