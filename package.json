@@ -21,7 +21,7 @@
     "jade": "^1.9.1",
     "method-override": "^2.3.1",
     "morgan": "^1.5.1",
-    "peer": "0.2.8",
+    "peer": "git://github.com/lyxsus/peerjs-server.git",
     "serve-favicon": "^2.2.0"
   },
   "devDependencies": {
