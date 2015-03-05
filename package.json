@@ -21,7 +21,9 @@
     "jade": "^1.9.1",
     "method-override": "^2.3.1",
     "morgan": "^1.5.1",
-    "peer": "git://github.com/lyxsus/peerjs-server.git",
+    "password-hash": "^1.2.2",
+    "peer": "git://ithub.com/unchatbar/peerjs-server.git",
+    "redis": "^0.12.1",
     "serve-favicon": "^2.2.0"
   },
   "devDependencies": {
@@ -37,3 +39,4 @@
     "time-grunt": "^1.0.0"
   }
 }
+
