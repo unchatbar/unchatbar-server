@@ -1,8 +1,21 @@
 var config = require('./config/config'),
     peer = require('peer').PeerServer,
-    redis = require('redis'),
-    passwordHash = require('password-hash'),
-    client = redis.createClient();
+//redis = require('redis'),
+//client = redis.createClient(),
+    passwordHash = require('password-hash');
+//no free redis on heroku
+var client = {
+    clients: {},
+    get: function (id, cb) {
+        cb(null, this.clients[id] || null);
+    },
+    set: function (key, value) {
+        this.clients[key] = value;
+    },
+    flushall: function () {
+        this.clients = {};
+    }
+};
 if (config.cleanTable === true) {
     client.flushall();
 }
