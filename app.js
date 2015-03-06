@@ -3,8 +3,9 @@ var config = require('./config/config'),
     redis = require('redis'),
     passwordHash = require('password-hash'),
     client = redis.createClient();
-
-
+if (config.cleanTable === true) {
+    client.flushall();
+}
 config.peer.preprocess = function (req, res, next) {
     var clientId = req.params.id,
         pass = req.body.pass;
