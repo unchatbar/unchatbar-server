@@ -16,6 +16,9 @@ var client = {
         this.clients = {};
     }
 };
+var redis = {
+    print : ''
+};
 if (config.cleanTable === true) {
     client.flushall();
 }
